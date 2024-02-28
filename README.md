@@ -1,66 +1,43 @@
-Android Notifications App
-Overview
+# User Android App
 
-This Android application is developed as a task for SamTech. It is a native Android app created in Android Studio targeting the latest Android version (API level 31) with backward compatibility till Android version 8.0 (API level 26). The app integrates Firebase Push Notifications for receiving external notifications and uses a local database (Room) to store notifications locally.
-Features
+## Overview
 
-    Firebase Push Notifications:
-        The app integrates with Firebase to receive external notifications from the Firebase console.
-        Notifications include a title and description.
+The User Android App is a native application developed in Android Studio, targeting the latest Android version while ensuring backward compatibility with Android version 8.0. It integrates Firebase Push Notifications for receiving external notifications and utilizes a local database (Room) to store notifications locally. The UI/UX is designed to be responsive and intuitive, featuring appropriate UI components and navigation between screens.
 
-    Notification Display:
-        All received notifications are displayed on a screen with the latest notification on top.
-        Users can filter notifications based on the notification description and date/time.
+## Features
 
-    Animated Screen on Notification Click:
-        When a notification is clicked in the notification channel bar, an animated screen is displayed.
+1. **Firebase Push Notifications:**
+   - Integrated Firebase Push Notifications for receiving external notifications from the Firebase console.
+   - Notifications include a title and description.
 
-    Local Database (Room):
-        The app utilizes Room as a local database to store notifications locally.
-        CRUD (Create, Read, Update, Delete) operations are implemented for managing local notifications.
+2. **Notification Display:**
+   - Displays all notifications on a screen, with the latest notifications appearing at the top.
+   - Allows filtering of notifications based on the notification description and date/time.
 
-    UI/UX:
-        The app ensures a responsive and intuitive user interface.
-        It uses appropriate UI components such as RecyclerView, Material Controls, etc.
-        Navigation between screens is implemented using the Navigation Component.
+3. **Animated Notification Screen:**
+   - Displays an animated screen when a notification is clicked in the notification channel bar.
 
-Tech Stack
+4. **Local Database (Room):**
+   - Utilizes Room as a local database to store notifications locally.
+   - Implements CRUD (Create, Read, Update, Delete) operations for managing local notifications.
 
-    Android Studio
-    Kotlin
-    Dagger Hilt
-    Paging 3
-    Room
-    Firebase Cloud Messaging (FCM)
-    Navigation Component
+5. **UI/UX:**
+   - Ensures a responsive and intuitive user interface.
+   - Uses appropriate UI components such as RecyclerView, Material Controls, etc.
+   - Implements navigation between screens using Dagger Hilt, Paging 3, and Navigation Component.
 
+## Tech Stack
 
-  Getting Started
+- Android Studio
+- Kotlin
+- Dagger Hilt
+- Paging 3
+- Room
+- Firebase Cloud Messaging (FCM)
+- Navigation Component
 
-    Clone the Repository:
+## Getting Started
 
-    bash
-
-    git clone https://github.com/your-username/notifications-app.git
-
-    Open in Android Studio:
-        Open Android Studio.
-        Select "Open an existing Android Studio project" and choose the cloned directory.
-
-    Configure Firebase:
-        Follow the Firebase setup guide to add your project to Firebase.
-
-    Run the App:
-        Connect an Android device or use an emulator.
-        Click on the "Run" button in Android Studio.
-
-Screenshots
-
-
-
-Contributions
-
-Contributions are welcome! Feel free to submit issues and pull requests.
-License
-
-This project is licensed under the MIT License.
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/Eslam-samy/samtech_repo.git
