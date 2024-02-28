@@ -41,11 +41,6 @@ The User Android App is a native application developed in Android Studio, target
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/Eslam-samy/samtech_repo.git
-
-   Screenshots
-
-    Include screenshots of the app to showcase its UI and features.
-
 ## Contributions
 
 Contributions are welcome! Feel free to submit issues and pull requests.
