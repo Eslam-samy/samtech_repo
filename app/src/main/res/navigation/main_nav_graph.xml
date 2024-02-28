@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.elimone.samtechassignment.featurs.splash.SplashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen">
+        <action
+            android:id="@+id/action_splashScreen_to_animatedFragment"
+            app:destination="@id/animatedFragment"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashScreen_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/animatedFragment"
+        android:name="com.elimone.samtechassignment.featurs.animated_screen.AnimatedFragment"
+        android:label="AnimatedFragment" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.elimone.samtechassignment.featurs.home.presentation.screens.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_singleNotificationFragment"
+            app:destination="@id/singleNotificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singleNotificationFragment"
+        android:name="com.elimone.samtechassignment.featurs.single_notifications.presentation.screen.SingleNotificationFragment"
+        android:label="SingleNotificationFragment">
+
+        <argument
+            android:name="notification"
+            app:argType="com.elimone.samtechassignment.featurs.home.presentation.model.NotificationUiModel"
+             />
+    </fragment>
+</navigation>
